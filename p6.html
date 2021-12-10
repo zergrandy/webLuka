@@ -53,24 +53,30 @@
     <img src="./assets/img/subPage/十大文化美景.jpg" alt="missing img">
   </div>
   <div class="row" style=" padding: 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
-    <div class="row" style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(1)">
+    <div onclick="playAudio();" class="row" style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(1)">
       <img src="./assets/img/play.png" alt="missing img">
       <span style="color: white; font-size:12px" class="btn-inner--text">語音導覽</span>
     </div>
-    <div class="row" style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(2)">
+    <div onclick="playAudio();" class="row" style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(2)">
       <img src="./assets/img/play.png" alt="missing img">
       <span style="color: white; font-size:12px" class="btn-inner--text">Audio Guide</span>
     </div>
-    <div class="row" style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(3)">
+    <div onclick="playAudio();" class="row" style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(3)">
       <img src="./assets/img/play.png" alt="missing img">
       <span style="color: white; font-size:12px" class="btn-inner--text">音声ガイド</span>
     </div>
-    <div class="row" style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(4)">
+    <div onclick="playAudio();" class="row" style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(4)">
       <img src="./assets/img/play.png" alt="missing img">
       <span style="color: white; font-size:12px" class="btn-inner--text">음성 안내</span>
     </div>
   </div>
-
+  <div class="row" style=" padding: 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
+    <audio id="audio1" controls> 
+      <source src="./assets/audio/_243884073.m4a" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+  </div>
+  
   <div class="row" style="padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;">
     <img src="./assets/img/gayb5-qg3y5.gif" alt="missing gif" style="padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;">
   </div>
@@ -101,6 +107,11 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
   <script src="./assets/js/material-kit-pro.min.js?v=3.0.0" type="text/javascript"></script>
   <script type="text/javascript">
+
+    function playAudio(){
+      audio1 = document.getElementById('audio1');
+      audio1.play();
+    }
 
     function changeTextLaguage(num){
 

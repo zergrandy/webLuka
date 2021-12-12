@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage" style="background-color: black;">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-   <!-- <link rel="icon" type="image/png" href="./assets/img/LOGO_ATTM經典.PNG"> -->
+  <!-- <link rel="icon" type="image/png" href="./assets/img/LOGO_ATTM經典.PNG"> -->
   <title>
     luka lin
   </title>
@@ -21,7 +21,134 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link id="pagestyle" href="./assets/css/material-kit-pro.css?v=3.0.0" rel="stylesheet" />
-  
+
+  <style>
+    /*
+*************************************
+          Copyright 2018
+               benn
+*************************************
+*/
+
+    /* Google Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+    /* set global font to Open Sans */
+    body {
+      font-family: 'Open Sans', 'sans-serif';
+      background-image: url(http://benague.ca/files/pw_pattern.png);
+    }
+
+    /* header */
+    h1 {
+      color: #55acee;
+      text-align: center;
+    }
+
+    /* header/copyright link */
+    .link {
+      text-decoration: none;
+      color: #55acee;
+      border-bottom: 2px dotted #55acee;
+      transition: .3s;
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      -o-transition: .3s;
+      cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+    }
+
+    .link:hover {
+      color: #2ecc71;
+      border-bottom: 2px dotted #2ecc71;
+    }
+
+    /* button div */
+    #buttons {
+      padding-top: 50px;
+      text-align: center;
+    }
+
+    /* start da css for da buttons */
+    .btn {
+      border-radius: 5px;
+      padding: 15px 25px;
+      font-size: 22px;
+      text-decoration: none;
+      margin: 20px;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+    }
+
+    .btn:active {
+      transform: translate(0px, 5px);
+      -webkit-transform: translate(0px, 5px);
+      box-shadow: 0px 1px 0px 0px;
+    }
+
+    .blue {
+      background-color: #55acee;
+      box-shadow: 0px 5px 0px 0px #3C93D5;
+    }
+
+    .blue:hover {
+      background-color: #6FC6FF;
+    }
+
+    .green {
+      background-color: #2ecc71;
+      box-shadow: 0px 5px 0px 0px #15B358;
+    }
+
+    .green:hover {
+      background-color: #48E68B;
+    }
+
+    .red {
+      background-color: #e74c3c;
+      box-shadow: 0px 5px 0px 0px #CE3323;
+    }
+
+    .red:hover {
+      background-color: #FF6656;
+    }
+
+    .purple {
+      background-color: #9b59b6;
+      box-shadow: 0px 5px 0px 0px #82409D;
+    }
+
+    .purple:hover {
+      background-color: #B573D0;
+    }
+
+    .orange {
+      background-color: #e67e22;
+      box-shadow: 0px 5px 0px 0px #CD6509;
+    }
+
+    .orange:hover {
+      background-color: #FF983C;
+    }
+
+    .yellow {
+      background-color: #f1c40f;
+      box-shadow: 0px 5px 0px 0px #D8AB00;
+    }
+
+    .yellow:hover {
+      background-color: #FFDE29;
+    }
+
+    /* copyright stuffs.. */
+    p {
+      text-align: center;
+      color: #55acee;
+      padding-top: 20px;
+    }
+  </style>
+
+
 </head>
 
 <body class="presentation-page bg-gray-200">
@@ -29,59 +156,85 @@
   <!-- -------- START HEADER 1 w/ text and image on right ------- -->
 
   <div class="row" style="padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;">
-    <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
-      <p id="titleP" class="text-black opacity-8 lead pe-5 me-5" style="font-size: 1.5rem;">十大文化美景
+    <div style="background-color: black;" class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+      <p id="titleP" class="text-black opacity-8 lead pe-5 me-5"
+        style="font-size: 2rem; font-weight: 1000; color: white;">十大文化美景
       </p>
-      <button type="button" style="background-color: #ff7920;width: 20%;
-        height: 30px;
-        padding: 0rem;
-        margin: 0 !important;
-        right: 0px;
-        position: absolute;
-        top: 0px;
-        margin-top: 0.5rem !important;
-        margin-right: 0.5rem !important;" class="btn btn-linkedin btn-icon mt-2" onclick="map()">
-          <span style="color: white;" class="btn-inner--text">回首頁</span>
-       </button>
-      <p id="contentP" class="text-black opacity-8 lead pe-5 me-5" style="font-size: 1rem; padding-right: 0rem !important; margin-right: 0rem !important;">
+
+      <a href="#" style="background-color: #ff7920;width: 20%;
+      height: 30px;
+      padding: 0rem;
+      margin: 0 !important;
+      right: 0px;
+      position: absolute;
+      top: 0px;
+      margin-top: 0.5rem !important;
+      margin-right: 0.5rem !important;" class="btn orange" onclick="map()">回首頁</a>
+
+      <p id="contentP" class="text-black opacity-8 lead pe-5 me-5"
+        style="color: white; font-size: 1rem; padding-right: 0rem !important; margin-right: 0rem !important;">
         澎湖先人努力保留下來的人文景觀都是觀光的寶藏。散佈澎湖各島的古城門、砲台、老廟宇、歷史聚落、漁港、橋樑都是伴隨著歷史典故的美景。感受澎湖人文氣息，就從這些景點開始。
       </p>
-      
+
     </div>
-  </div>
-  <div class="row" style="padding: 0rem 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
-    <img src="./assets/img/subPage/十大文化美景.jpg" alt="missing img">
-  </div>
-  <div class="row" style=" padding: 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
-    <div class="row" style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(1)">
-      <img src="./assets/img/play.png" alt="missing img">
-      <span style="color: white; font-size:12px" class="btn-inner--text">語音導覽</span>
-    </div>
-    <div class="row" style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(2)">
-      <img src="./assets/img/play.png" alt="missing img">
-      <span style="color: white; font-size:12px" class="btn-inner--text">Audio Guide</span>
-    </div>
-    <div class="row" style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(3)">
-      <img src="./assets/img/play.png" alt="missing img">
-      <span style="color: white; font-size:12px" class="btn-inner--text">音声ガイド</span>
-    </div>
-    <div class="row" style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;" onclick="changeTextLaguage(4)">
-      <img src="./assets/img/play.png" alt="missing img">
-      <span style="color: white; font-size:12px" class="btn-inner--text">음성 안내</span>
-    </div>
-  </div>
-  <div class="row" style=" padding: 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
-    <audio id="audio1" controls> 
-      <source src="./assets/audio/japan.mp3" type="audio/ogg">
-    Your browser does not support the audio element.
-    </audio>
-  </div>
-  
-  <div class="row" style="padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;">
-    <img src="./assets/img/gayb5-qg3y5.gif" alt="missing gif" style="padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;">
   </div>
 
-  
+  <div class="row"
+    style="background-color: black; padding: 0rem 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
+    <img src="./assets/img/subPage/十大文化美景.jpg" alt="missing img">
+  </div>
+
+  <div class="row" style=" padding: 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
+    <div class="row"
+      style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
+      onclick="changeTextLaguage(1)">
+      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      padding-top: calc(var(--bs-gutter-x) * .5);
+      padding-left: calc(var(--bs-gutter-x) * .9);">
+      <span style="color: white; font-size:12px; text-align: center; display:block;" class="btn-inner--text">語音導覽</span>
+    </div>
+    <div class="row"
+      style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
+      onclick="changeTextLaguage(2)">
+      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      padding-top: calc(var(--bs-gutter-x) * .5);
+      padding-left: calc(var(--bs-gutter-x) * .9);">
+      <span style="color: white; font-size:12px; text-align: center; display:block;" class="btn-inner--text">Audio
+        Guide</span>
+    </div>
+    <div class="row"
+      style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
+      onclick="changeTextLaguage(3)">
+      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      padding-top: calc(var(--bs-gutter-x) * .5);
+      padding-left: calc(var(--bs-gutter-x) * .9);">
+      <span style="color: white; font-size:12px; text-align: center; display:block;"
+        class="btn-inner--text">音声ガイド</span>
+    </div>
+    <div class="row"
+      style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
+      onclick="changeTextLaguage(4)">
+      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      padding-top: calc(var(--bs-gutter-x) * .5);
+      padding-left: calc(var(--bs-gutter-x) * .9);">
+      <span style="color: white; font-size:12px; text-align: center; display:block;" class="btn-inner--text">음성
+        안내</span>
+    </div>
+  </div>
+
+  <div class="row" style="display: none; padding: 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
+    <audio id="audio1" controls>
+      <source src="./assets/audio/japan.mp3" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="row" style="padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;">
+    <img src="./assets/img/gayb5-qg3y5.gif" alt="missing gif"
+      style="padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;">
+  </div>
+
+
   <!--   Core JS Files   -->
   <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
@@ -108,48 +261,48 @@
   <script src="./assets/js/material-kit-pro.min.js?v=3.0.0" type="text/javascript"></script>
   <script type="text/javascript">
 
-    function playAudio(){
+    function playAudio() {
       audio1 = document.getElementById('audio1');
       audio1.play();
     }
 
-    function changeTextLaguage(num){
+    function changeTextLaguage(num) {
       playAudio();
 
-      if(num == 1){
+      if (num == 1) {
         titleP = document.getElementById('titleP');
         contentP = document.getElementById('contentP');
-        
+
         titleP.innerText = "十大文化美景";
         contentP.innerText = "澎湖先人努力保留下來的人文景觀都是觀光的寶藏。散佈澎湖各島的古城門、砲台、老廟宇、歷史聚落、漁港、橋樑都是伴隨著歷史典故的美景。感受澎湖人文氣息，就從這些景點開始。";
-      }    
+      }
 
-      if(num == 2){
+      if (num == 2) {
         titleP = document.getElementById('titleP');
         contentP = document.getElementById('contentP');
-        
+
         titleP.innerText = "Top ten cultural beauty";
         contentP.innerText = "The cultural landscapes that the ancestors of Penghu tried to preserve are treasures of tourism. The ancient city gates, forts, old temples, historical settlements, fishing ports, and bridges scattered on the islands of Penghu are all beautiful scenery accompanied by historical allusions. Feel the cultural atmosphere of Penghu from these scenic spots.";
       }
 
-      if(num == 3){
+      if (num == 3) {
         titleP = document.getElementById('titleP');
         contentP = document.getElementById('contentP');
-        
+
         titleP.innerText = "文化美トップ10";
         contentP.innerText = "澎湖の先祖が守ろうとした文化的景観は、観光の宝物です。澎湖の島々に点在する古代の城門、要塞、古い寺院、歴史的集落、漁港、橋はすべて、歴史的な暗示を伴う美しい風景です。これらの景勝地から澎湖の文化的な雰囲気を感じてください。";
       }
 
-      if(num == 4){
+      if (num == 4) {
         titleP = document.getElementById('titleP');
         contentP = document.getElementById('contentP');
-        
+
         titleP.innerText = "10대 문화미인";
         contentP.innerText = "펑후의 선조들이 보존하려고 애썼던 문화경관은 관광의 보물이다. 펑후 섬에 흩어져 있는 고대 성문, 요새, 오래된 사원, 역사적 정착지, 어항, 다리는 모두 역사적 암시를 동반하는 아름다운 풍경입니다. 이 경치 좋은 곳에서 펑후의 문화적인 분위기를 느껴보세요.";
       }
     }
 
-    function map(){
+    function map() {
       window.location.href = "indexMain.html";
     }
 

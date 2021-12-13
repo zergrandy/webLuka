@@ -21,7 +21,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link id="pagestyle" href="./assets/css/material-kit-pro.css?v=3.0.0" rel="stylesheet" />
-
+  <script src="assets/js/temp20211214.js"></script>
+  <script>
+    var nowPlaying = 0;
+  </script>
   <style>
     /*
 *************************************
@@ -186,7 +189,7 @@
     <div class="row"
       style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
       onclick="changeTextLaguage(1)">
-      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      <img id="playBtn1" src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
       padding-top: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .9);">
       <span style="padding: 0;color: white; font-size:12px; text-align: center; display:block;" class="btn-inner--text">語音導覽</span>
@@ -194,7 +197,7 @@
     <div class="row"
       style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
       onclick="changeTextLaguage(2)">
-      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      <img id="playBtn2" src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
       padding-top: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .9);">
       <span style="padding: 0;color: white; font-size:12px; text-align: center; display:block;" class="btn-inner--text">Audio
@@ -203,7 +206,7 @@
     <div class="row"
       style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
       onclick="changeTextLaguage(3)">
-      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      <img id="playBtn3" src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
       padding-top: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .9);">
       <span style="padding: 0;color: white; font-size:12px; text-align: center; display:block;"
@@ -212,7 +215,7 @@
     <div class="row"
       style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
       onclick="changeTextLaguage(4)">
-      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      <img id="playBtn4" src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
       padding-top: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .9);">
       <span style="padding: 0;color: white; font-size:12px; text-align: center; display:block;" class="btn-inner--text">음성
@@ -259,13 +262,9 @@
   <script src="./assets/js/material-kit-pro.min.js?v=3.0.0" type="text/javascript"></script>
   <script type="text/javascript">
 
-    function playAudio() {
-      audio1 = document.getElementById('audio1');
-      audio1.play();
-    }
 
     function changeTextLaguage(num) {
-      playAudio();
+      playPauseFunc(num);
 
       if (num == 1) {
         titleP = document.getElementById('titleP');

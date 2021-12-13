@@ -21,7 +21,12 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link id="pagestyle" href="./assets/css/material-kit-pro.css?v=3.0.0" rel="stylesheet" />
-
+  
+  <script src="assets/js/temp20211214.js"></script>
+  <script>
+    var nowPlaying = 0;
+  </script>
+  
   <style>
     /*
 *************************************
@@ -188,7 +193,7 @@
     <div class="row"
       style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
       onclick="changeTextLaguage(1)">
-      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      <img id="playBtn1" src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
       padding-top: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .9);">
       <span style="padding: 0;color: white; font-size:12px; text-align: center; display:block;" class="btn-inner--text">語音導覽</span>
@@ -196,7 +201,7 @@
     <div class="row"
       style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
       onclick="changeTextLaguage(2)">
-      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      <img id="playBtn2" src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
       padding-top: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .9);">
       <span style="padding: 0;color: white; font-size:12px; text-align: center; display:block;" class="btn-inner--text">Audio
@@ -205,7 +210,7 @@
     <div class="row"
       style="width: 25%; background-color: steelblue; padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
       onclick="changeTextLaguage(3)">
-      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      <img id="playBtn3" src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
       padding-top: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .9);">
       <span style="padding: 0;color: white; font-size:12px; text-align: center; display:block;"
@@ -214,7 +219,7 @@
     <div class="row"
       style="width: 25%; background-color: rgb(223, 168, 86); padding: 0; margin-right: 0rem !important; margin-left: 0rem !important;"
       onclick="changeTextLaguage(4)">
-      <img src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
+      <img id="playBtn4" src="./assets/img/play.png" alt="missing img" style="padding-right: calc(var(--bs-gutter-x) * .9);
       padding-top: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .9);">
       <span style="padding: 0;color: white; font-size:12px; text-align: center; display:block;" class="btn-inner--text">음성
@@ -261,14 +266,40 @@
   <script src="./assets/js/material-kit-pro.min.js?v=3.0.0" type="text/javascript"></script>
   <script type="text/javascript">
 
-    function playAudio() {
-      audio1 = document.getElementById('audio1');
-      audio1.load();
-      audio1.play();
-    }
+    /*
+    function playPauseFunc(num){
 
+      if(nowPlaying == num){
+        nowPlaying = 0;
+        stopAudio();
+
+        //change img
+        playBtn1P = document.getElementById('playBtn' + num);
+        playBtn1P.src = "./assets/img/play.png";
+      }else{
+        nowPlaying = num;
+        playAudio();
+
+        //change img
+        playBtn1P = document.getElementById('playBtn1');
+        playBtn2P = document.getElementById('playBtn2');
+        playBtn3P = document.getElementById('playBtn3');
+        playBtn4P = document.getElementById('playBtn4');
+
+        playBtn1P.src = "./assets/img/play.png";
+        playBtn2P.src = "./assets/img/play.png";
+        playBtn3P.src = "./assets/img/play.png";
+        playBtn4P.src = "./assets/img/play.png";
+
+        //change img
+        playBtnP = document.getElementById('playBtn' + num);
+        playBtnP.src = "./assets/img/pause.png";
+      }
+    }
+*/
     function changeTextLaguage(num) {
-      playAudio();
+
+      playPauseFunc(num);
 
       if (num == 1) {
         titleP = document.getElementById('titleP');
@@ -279,6 +310,33 @@
         titleP.style.fontSize = '2rem';
 
         contentP.innerText = "澎湖先人努力保留下來的人文景觀都是觀光的寶藏。散佈澎湖各島的古城門、砲台、老廟宇、歷史聚落、漁港、橋樑都是伴隨著歷史典故的美景。感受澎湖人文氣息，就從這些景點開始。";
+      
+        /*if(nowPlaying == 1){
+          nowPlaying = 0;
+          stopAudio();
+
+          //change img
+          playBtn1P = document.getElementById('playBtn1');
+          playBtn2P = document.getElementById('playBtn2');
+          playBtn3P = document.getElementById('playBtn3');
+          playBtn4P = document.getElementById('playBtn4');
+
+          playBtn1P.src = "./assets/img/play.png";
+        }else{
+          nowPlaying = 1;
+          playAudio();
+
+          //change img
+          playBtn1P = document.getElementById('playBtn1');
+          playBtn2P = document.getElementById('playBtn2');
+          playBtn3P = document.getElementById('playBtn3');
+          playBtn4P = document.getElementById('playBtn4');
+
+          playBtn1P.src = "./assets/img/pause.png";
+          playBtn2P.src = "./assets/img/play.png";
+          playBtn3P.src = "./assets/img/play.png";
+          playBtn4P.src = "./assets/img/play.png";
+        }*/
       }
 
       if (num == 2) {

@@ -229,7 +229,7 @@
 
   <div class="row" style="display: none; padding: 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
     <audio id="audio1" preload="auto"  controls>
-      <source src="https://zergrandy.github.io/webLuka/assets/audio/japan.mp3" type="audio/mpeg">
+      <source id="audioSource" src="https://zergrandy.github.io/webLuka/assets/audio/japan.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </div>
@@ -301,7 +301,14 @@
 
       playPauseFunc(num);
 
+      var sourceCh = "https://zergrandy.github.io/webLuka/assets/audio/ch/十大文化美景.mp3";
+      var sourceEn = "https://zergrandy.github.io/webLuka/assets/audio/en/十大文化美景.mp3";
+      var sourceKr = "https://zergrandy.github.io/webLuka/assets/audio/kr/十大文化美景.mp3";
+      var sourceJa = "https://zergrandy.github.io/webLuka/assets/audio/ja/十大文化美景.mp3";
+      var source = document.getElementById('audioSource');
+
       if (num == 1) {
+        source.src = sourceCh;
         titleP = document.getElementById('titleP');
         contentP = document.getElementById('contentP');
 
@@ -340,6 +347,7 @@
       }
 
       if (num == 2) {
+        source.src = sourceEn;
         titleP = document.getElementById('titleP');
         contentP = document.getElementById('contentP');
 
@@ -351,6 +359,7 @@
       }
 
       if (num == 3) {
+        source.src = sourceJa;
         titleP = document.getElementById('titleP');
         contentP = document.getElementById('contentP');
 
@@ -362,6 +371,7 @@
       }
 
       if (num == 4) {
+        source.src = sourceKr;
         titleP = document.getElementById('titleP');
         contentP = document.getElementById('contentP');
 

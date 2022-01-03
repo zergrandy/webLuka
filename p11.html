@@ -25,6 +25,7 @@
   <script>
     var nowPlaying = 0;
   </script>
+  <link href="./assets/css/custom.css" rel="stylesheet" />
   <style>
     /*
 *************************************
@@ -180,9 +181,35 @@
     </div>
   </div>
 
-  <div class="row"
-    style="background-color: black; padding: 0rem 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
-    <img src="./assets/img/subPage/澎湖王船祭祀.jpg" alt="missing img">
+  <div class="row" style="background-color: black; padding: 0rem 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="./assets/img/imgSlide/澎湖王船祭祀/1_boat.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/img/imgSlide/澎湖王船祭祀/2_boat.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/img/imgSlide/澎湖王船祭祀/3_boat.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/img/imgSlide/澎湖王船祭祀/4_boat.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/img/imgSlide/澎湖王船祭祀/5_boat.jpg" style="width:100%">
+      </div>
+
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
   </div>
 
   <div class="row" style=" padding: 0rem; margin-right: 0rem !important; margin-left: 0rem !important;">
@@ -260,6 +287,29 @@
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
   <script src="./assets/js/material-kit-pro.min.js?v=3.0.0" type="text/javascript"></script>
+  
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+  </script>
+
   <script type="text/javascript">
 
     function changeTextLaguage(num) {

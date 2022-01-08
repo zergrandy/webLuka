@@ -368,58 +368,7 @@
         contentP.innerText = "과거 펑후 사람들은 대부분 어업에 종사했습니다. 그래서 ‘돌아오다’라는 뜻을 지닌 ‘구이(歸)’와 발음이 같은 거북이(龜, 구이)에게 바다에서 일하는 사람들이 무사히 돌아오길 바라는 마음을 담아 기도를 올렸습니다. 사당에선 원소절 기간에 ‘평안 거북이’를 비치하는 한편, 사람들이 즈자오를 던져 신의 뜻을 물을 수 있게 해 주죠. 사람들은 이 의식을 통해 이듬해에 좋은 일이 더 많이 있기를 기원합니다.";      
       }
     }
-
-    function map() {
-      window.location.href = "index2.html";
-    }
-
-    if (document.getElementById('state1')) {
-      const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
-      if (!countUp.error) {
-        countUp.start();
-      } else {
-        console.error(countUp.error);
-      }
-    }
-    if (document.getElementById('state2')) {
-      const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
-      if (!countUp1.error) {
-        countUp1.start();
-      } else {
-        console.error(countUp1.error);
-      }
-    }
-    if (document.getElementById('state3')) {
-      const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-    if (document.getElementById('state4')) {
-      const countUp2 = new CountUp('state4', document.getElementById("state4").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-    if (document.getElementById('state5')) {
-      const countUp2 = new CountUp('state5', document.getElementById("state5").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-
-    $(function () {
-      $("#contact-form").submit(function () {
-        alert(1);
-        return false;
-      });
-    });
+ 
   </script>
 </body>
 

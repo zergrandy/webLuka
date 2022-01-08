@@ -369,58 +369,7 @@
         contentP.innerText = "펑후는 섬이 많아 등대도 많습니다. 어둠이 드리우면 등대들은 불을 밝힙니다. 배들을 올바른 방향으로 이끌며 바다를 수호하죠. 이곳에는 타이완에서 가장 오래된 등대가 있습니다. 타이완 최서단에 있는 등대이기도 하죠. 등대마다 특색과 이야기가 있으니 방문해 보세요.";      
       }
     }
-
-    function map() {
-      window.location.href = "index2.html";
-    }
-
-    if (document.getElementById('state1')) {
-      const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
-      if (!countUp.error) {
-        countUp.start();
-      } else {
-        console.error(countUp.error);
-      }
-    }
-    if (document.getElementById('state2')) {
-      const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
-      if (!countUp1.error) {
-        countUp1.start();
-      } else {
-        console.error(countUp1.error);
-      }
-    }
-    if (document.getElementById('state3')) {
-      const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-    if (document.getElementById('state4')) {
-      const countUp2 = new CountUp('state4', document.getElementById("state4").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-    if (document.getElementById('state5')) {
-      const countUp2 = new CountUp('state5', document.getElementById("state5").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-
-    $(function () {
-      $("#contact-form").submit(function () {
-        alert(1);
-        return false;
-      });
-    });
+ 
   </script>
 </body>
 

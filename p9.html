@@ -368,58 +368,7 @@
         contentP.innerText = "이곳에는 선사시대부터, 네덜란드, 정성공, 청나라, 일본 점령을 거쳐 제2차 세계대전 이후까지 펑후의 풍부한 역사 이야기를 전시하고 있습니다. 펑후의 관광 명소는 세월과 함께 만들어진 셈이죠. 시대별 산물은 국가 공원 지정, 국제 인증, 국제 수상 등을 통해 펑후의 관광 스폿이 되었답니다.";      
       }
     }
-
-    function map() {
-      window.location.href = "index2.html";
-    }
-
-    if (document.getElementById('state1')) {
-      const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
-      if (!countUp.error) {
-        countUp.start();
-      } else {
-        console.error(countUp.error);
-      }
-    }
-    if (document.getElementById('state2')) {
-      const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
-      if (!countUp1.error) {
-        countUp1.start();
-      } else {
-        console.error(countUp1.error);
-      }
-    }
-    if (document.getElementById('state3')) {
-      const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-    if (document.getElementById('state4')) {
-      const countUp2 = new CountUp('state4', document.getElementById("state4").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-    if (document.getElementById('state5')) {
-      const countUp2 = new CountUp('state5', document.getElementById("state5").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-
-    $(function () {
-      $("#contact-form").submit(function () {
-        alert(1);
-        return false;
-      });
-    });
+ 
   </script>
 </body>
 

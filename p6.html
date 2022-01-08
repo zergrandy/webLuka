@@ -431,58 +431,7 @@
         contentP.innerText = "펑후의 선조들이 남긴 인문 경관은 이곳의 보석과도 같은 볼거리입니다. 펑후의 각 섬에 분포되어 있는 옛 성문, 대포, 사당, 부락, 부두, 다리는 역사와 함께 아름다운 경관이 되었죠. 펑후의 명승지를 감상하며 인문적 분위기를 느껴 보세요.";
       }
     }
-
-    function map() {
-      window.location.href = "index2.html";
-    }
-
-    if (document.getElementById('state1')) {
-      const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
-      if (!countUp.error) {
-        countUp.start();
-      } else {
-        console.error(countUp.error);
-      }
-    }
-    if (document.getElementById('state2')) {
-      const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
-      if (!countUp1.error) {
-        countUp1.start();
-      } else {
-        console.error(countUp1.error);
-      }
-    }
-    if (document.getElementById('state3')) {
-      const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-    if (document.getElementById('state4')) {
-      const countUp2 = new CountUp('state4', document.getElementById("state4").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-    if (document.getElementById('state5')) {
-      const countUp2 = new CountUp('state5', document.getElementById("state5").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-
-    $(function () {
-      $("#contact-form").submit(function () {
-        alert(1);
-        return false;
-      });
-    });
+ 
   </script>
 </body>
 

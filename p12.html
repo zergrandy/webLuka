@@ -368,58 +368,7 @@
         contentP.innerText = "위웡다오 등대를 모티브로 한 펑후 관광 센터의 웡웡이 여러분에게 펑후를 소개합니다. 펑후의 10대 미식, 10대 행사, 10대 자연 경관, 문화 경관, 수상 레저, 펑후 역사, 현지 이야기를 알리죠. 펑후를 여행해 보세요.";      
       }
     }
-
-    function map() {
-      window.location.href = "index2.html";
-    }
-
-    if (document.getElementById('state1')) {
-      const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
-      if (!countUp.error) {
-        countUp.start();
-      } else {
-        console.error(countUp.error);
-      }
-    }
-    if (document.getElementById('state2')) {
-      const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
-      if (!countUp1.error) {
-        countUp1.start();
-      } else {
-        console.error(countUp1.error);
-      }
-    }
-    if (document.getElementById('state3')) {
-      const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-    if (document.getElementById('state4')) {
-      const countUp2 = new CountUp('state4', document.getElementById("state4").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-    if (document.getElementById('state5')) {
-      const countUp2 = new CountUp('state5', document.getElementById("state5").getAttribute("countTo"));
-      if (!countUp2.error) {
-        countUp2.start();
-      } else {
-        console.error(countUp2.error);
-      };
-    }
-
-    $(function () {
-      $("#contact-form").submit(function () {
-        alert(1);
-        return false;
-      });
-    });
+ 
   </script>
 </body>
 

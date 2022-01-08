@@ -295,6 +295,15 @@
     var slideIndex = 0;
     showSlides();
     
+    function myLoop() {         //  create a loop function
+      setTimeout(function() {   //  call a 3s setTimeout when the loop is called
+        console.log('hello');   //  your code here
+        myLoop();             //  ..  again which will trigger another 
+      }, 3000)
+    }
+
+    myLoop();
+
     function showSlides() {
       var i;
       var slides = document.getElementsByClassName("mySlides");

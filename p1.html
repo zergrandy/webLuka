@@ -293,18 +293,9 @@
   
   <script>
     var slideIndex = 0;
-    showSlides();
-    
-    function myLoop() {         //  create a loop function
-      setTimeout(function() {   //  call a 3s setTimeout when the loop is called
-        console.log('hello');   //  your code here
-        myLoop();             //  ..  again which will trigger another 
-      }, 3000)
-    }
 
-    myLoop();
+    function showSlides2() {
 
-    function showSlides() {
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
@@ -318,30 +309,11 @@
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 5000); // Change image every 2 seconds
-    }
-
-    function showSlides2() {
-
-      while (1) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-
-        setTimeout(() => {console.log("this is the first message")}, 5000);
-      }
 
     }
+    
+    showSlides2();
+    var timeoutID = window.setInterval(( () => showSlides2() ), 5000);
 
   </script>
 
